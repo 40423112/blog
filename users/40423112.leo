@@ -34,9 +34,15 @@
 <v t="amd.20160329124921.1"><vh>@edit index.html</vh></v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="amd.20160329125251.1"><vh>@clean template-20160329.md</vh></v>
-<v t="leo.20160401114622.1"><vh>@clean admin-20160401.md</vh></v>
-<v t="leo.20160506103158.1"><vh>@clean admin-20160506.md</vh></v>
+<v t="amd.20160329125251.1" a="E"><vh>@clean template-20160329.md</vh>
+<v t="leo.20160506110327.1"><vh>9</vh></v>
+</v>
+<v t="leo.20160401114622.1" a="E"><vh>@clean admin-20160401.md</vh>
+<v t="leo.20160506110324.1"><vh>7</vh></v>
+</v>
+<v t="leo.20160506103158.1" a="E"><vh>@clean admin-20160506.md</vh>
+<v t="leo.20160506110249.1"><vh>5</vh></v>
+</v>
 </v>
 </v>
 </vnodes>
@@ -329,14 +335,17 @@ Author: 40423112
 &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"&gt;&lt;/script&gt;
  
 &lt;script&gt;
+//&lt;!--
 window.onload=function(){
 brython(1);
 }
+//--&gt;
 &lt;/script&gt;
  
 &lt;svg width="800" height="600" viewBox="0 0 800 600" id="svgout"&gt;&lt;/svg&gt;
  
 &lt;script type="text/python"&gt;
+#&lt;!--
 from javascript import JSConstructor
 from browser import alert
 from browser import window, document
@@ -387,6 +396,7 @@ c4 = s.circle(25,25,10).attr({ 'fill': "silver", 'stroke': "black", 'strokeWidth
 g4 = s.group(r4,c4).attr({ 'id': 'g4' });
 g4.appendTo( g3 )
 g4.animate( { 'transform' : 'r360,25,25' },4000)
+#--&gt;
 &lt;/script&gt;
 
 #######################
@@ -394,6 +404,7 @@ g4.animate( { 'transform' : 'r360,25,25' },4000)
 &lt;svg width="800" height="700" viewBox="0 0 800 700" id="svgout1"&gt;&lt;/svg&gt;
  
 &lt;script type="text/python"&gt;
+#&lt;!--
 from javascript import JSConstructor
 from browser import alert
 from browser import window, document
@@ -441,6 +452,10 @@ document['rect'].bind('click', rtoyellow)
 document['circle'].bind('click', ctogreen)
 document['tux'].bind('mouseover', hoverover)
 document['tux'].bind('mouseleave', hoverout)
+#--&gt;
 &lt;/script&gt;</t>
+<t tx="leo.20160506110249.1"></t>
+<t tx="leo.20160506110324.1"></t>
+<t tx="leo.20160506110327.1"></t>
 </tnodes>
 </leo_file>
